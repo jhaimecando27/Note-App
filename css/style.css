@@ -1,0 +1,134 @@
+header, main, footer {
+  padding-left: 300px;
+}
+
+nav {
+  background-color: #26a69a;
+}
+
+.notes__sidebar {
+  padding: 1em;
+  height: 100vh;
+  /* New Note button */
+}
+.notes__sidebar .notes__list-item {
+  background: #eeeeee;
+  cursor: pointer;
+  box-shadow: 3px 4px rgba(0, 0, 0, 0.17);
+  margin-bottom: 1.3em;
+  /* Card brief Informations */
+  /* Delete Button */
+}
+.notes__sidebar .notes__list-item .notes__small-title,
+.notes__sidebar .notes__list-item .notes__small-updated {
+  padding: 10px;
+}
+.notes__sidebar .notes__list-item .notes__small-title {
+  font-size: 1.2em;
+}
+.notes__sidebar .notes__list-item .notes__small-body {
+  padding: 0 10px;
+}
+.notes__sidebar .notes__list-item .notes__small-updated {
+  color: #aaaaaa;
+  font-style: italic;
+}
+.notes__sidebar .notes__list-item .card-action {
+  padding: 8px 12px;
+}
+.notes__sidebar .notes__list-item .notes__delete {
+  width: 100%;
+  height: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+  cursor: pointer;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.notes__sidebar .notes__list-item .notes__delete:hover {
+  background-position: center;
+  color: #fff;
+  text-decoration: none;
+}
+.notes__sidebar .notes__list-item .notes__delete:active {
+  transform: scale(0.95);
+}
+.notes__sidebar .notes__add {
+  position: fixed;
+  right: 2em;
+  bottom: 2em;
+  display: flex;
+  height: 50px;
+  padding: 0;
+  background: #009578;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.notes__sidebar .notes__add .button__text,
+.notes__sidebar .notes__add .button__icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 24px;
+  color: #fff;
+  height: 100%;
+}
+.notes__sidebar .notes__add .button__icon {
+  font-size: 1.5em;
+  background: rgba(0, 0, 0, 0.08);
+}
+.notes__sidebar .notes__add:hover {
+  opacity: 0.8;
+}
+.notes__sidebar .notes__list-item--selected {
+  background: #eeeeee;
+  box-shadow: 3px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+  font-weight: bold;
+  transition-timing-function: ease-in-out;
+  transition: 0.15s;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.notes__preview {
+  padding: 2em 2em;
+}
+.notes__preview .notes__title, .notes__preview .notes__body {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.notes__preview input {
+  font-size: 2em !important;
+  font-weight: bold;
+}
+.notes__preview .notes__body {
+  margin-top: 1em;
+  min-height: 70vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+@media only screen and (max-width: 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
