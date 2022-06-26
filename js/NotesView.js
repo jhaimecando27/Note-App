@@ -78,13 +78,14 @@ export default class NotesView {
     _createListItemHTML(id, title, body, updated) {
 
         // Maximum char in the card/note in sidebar
+        const MAX_TITLE_LENGTH = 25;
         const MAX_BODY_LENGTH = 60;
 
         return `
             <div class="notes__list-item card" data-note-id="${id}">
                 <div class="card-stacked>
                     <div class="card-content">
-                        <div class="notes__small-title">${title}</div>
+                        <div class="notes__small-title">${title.substring(0, MAX_TITLE_LENGTH)} ${title.length > MAX_TITLE_LENGTH ? "..." : ""}</div>
                         <div class="notes__small-body">
                             ${body.substring(0, MAX_BODY_LENGTH)}
                             ${body.length > MAX_BODY_LENGTH ? "..." : ""}
